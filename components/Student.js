@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const Student = () => {
@@ -9,18 +10,15 @@ const Student = () => {
       <p className="text-gray-800 text-3xl lg:text-5xl font-medium capitalize">
         Our students say
       </p>
-      <div className="flex flex-col lg:flex-row justify-center  lg:justify-between items-center gap-5 py-10 lg:py-20">
-        <img src="/assets/student.svg" alt="" />
+      <div className="flex flex-col lg:flex-row justify-center lg:justify-between items-center gap-5 py-10 lg:py-20">
+        <div className="w-[400px] md:-[600px] h-[400px] relative object-cover object-center">
+          <Image fill className="w-full h-full absolute rounded-xl" src="/assets/student.jpeg" alt="" />
+        </div>
         <div className="flex flex-col gap-5 items-start">
-          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">Martin Watson</p>
-          <div className="flex items-center gap-2">
-            <img src="/assets/uk.svg" alt="itersfgjds" />
-            <p className="text-gray-500">English teacher</p>
-          </div>
+          <p className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold">Sandeep Kaur</p>
+          <p className="text-gray-500">OPSC Aspirant</p>
           <p className=" text-base sm:text-lg md:text-2xl lg:text-3xl">
-            There is no way I could have made the same <br /> progress learning Spanish
-            without using Lingua. <br /> The best part is now learning Spanish has <br />
-            become one of my biggest hobbies.
+            Being an introvert student, asking questions in classes was tough, but Learnduke made it easy and comfortable.
           </p>
         </div>
       </div>
